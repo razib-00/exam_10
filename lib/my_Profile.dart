@@ -20,22 +20,13 @@ class _MyProfileState extends State<MyProfile> {
                 topLeft: Radius.circular(20),
                 topRight: Radius.circular(20)
             )),
-        actions: [
-          IconButton(onPressed: (){
-
-          },
-              icon: const Icon(Icons.add),
-          ),
-          IconButton(onPressed: (){
-
-          },
-              icon:const Icon(Icons.settings),
-          ),
-          IconButton(onPressed:(){
-
-          },
-              icon:const Icon(Icons.call),
-          )
+       actions: const [
+          Icon(Icons.add),
+          SizedBox(width: 5,),
+          Icon(Icons.settings),
+          SizedBox(width: 5,),
+          Icon(Icons.call),
+          SizedBox(width: 5,)
         ],
       ),
       body: const Padding(
