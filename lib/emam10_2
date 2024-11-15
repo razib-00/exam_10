@@ -1,0 +1,42 @@
+import 'package:flutter/material.dart';
+
+class Exam102 extends StatefulWidget {
+  const Exam102({super.key});
+
+  @override
+  State<Exam102> createState() => _Exam102State();
+}
+
+class _Exam102State extends State<Exam102> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        toolbarHeight: 80,
+        centerTitle: true,
+        backgroundColor: Colors.red,
+        foregroundColor: Colors.white,
+        title: const Text('Need Blood'),
+        actions: [IconButton(onPressed: (){}, icon: const Icon(Icons.add))],
+        shape:const  RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+            topRight: Radius.circular(20),
+            topLeft: Radius.circular(20)
+          )
+        )
+      ),
+      body:const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CircleAvatar(
+              radius: 50,
+              child: Icon(Icons.bloodtype,color: Colors.red,size: 70,),
+            ),
+            Text('Donate Blood',style: TextStyle(fontWeight: FontWeight.bold),)
+          ],
+        ),
+      )
+    );
+  }
+}
