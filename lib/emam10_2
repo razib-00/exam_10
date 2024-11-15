@@ -31,7 +31,7 @@ class _Exam102State extends State<Exam102> {
           children: [
             CircleAvatar(
               radius: 50,
-              child: Icon(Icons.bloodtype,color: Colors.red,size: 70,),
+              child: Icon(Icons.bloodtype_outlined,color: Colors.red,size: 70,),
             ),
             Text('Donate Blood',style: TextStyle(fontWeight: FontWeight.bold),)
           ],
